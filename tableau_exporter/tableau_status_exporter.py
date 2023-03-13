@@ -73,7 +73,7 @@ class TableauMetricsCollector(object):
     def collect(self):
         '''collect metrics'''
         now = datetime.datetime.now()
-        print(now)
+        logger.info("dattime: {}".format(now))
         check = '{}/admin/systeminfo.xml'.format(self.token_manager.host)
 
         # 3 retries
